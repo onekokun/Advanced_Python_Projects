@@ -20,7 +20,7 @@ print(faces)
 for x,y,w,h in faces:
     img = cv2.rectangle(img, (x,y), (x+w,y+h),(0,255,0),3)
     
-resized = cv2.resize(img, (int(img.shape[1]/7),int(img.shape[0]/7)))
+resized = cv2.resize(img, (int(img.shape[1]/2),int(img.shape[0]/2)))
 
 cv2.imshow("Gray",resized)
 
